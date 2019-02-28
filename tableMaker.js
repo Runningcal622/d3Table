@@ -1,4 +1,5 @@
-var makeTable() = function(){
+var makeTable() = function()
+{
   people = [peopleMaker("Eileen","CSC","Sophmore","Female"),peopleMaker("Caleb","CSC","Senior","Male")
   ,peopleMaker("Michael","CSC","10 years removed","Male")
     ,peopleMaker("Emma","Math","Sophmore","Female"),peopleMaker("Rob","CSC","Sophmore","Male")];
@@ -24,15 +25,7 @@ var makeTable() = function(){
       .text(function(d){
         return d.gender
       });
-
-
-
-
-
-
-
-
-}
+};
 
 var peopleMaker = function(name, major, year, gender){
     name:name,
