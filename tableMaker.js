@@ -20,7 +20,7 @@ var makeTable = function(){
 
   rows.append("td")
       .text(function(d){return d.gender});
-};
+}
 
 var peopleMaker = function(name, major, year, gender){
   return{
@@ -29,4 +29,4 @@ var peopleMaker = function(name, major, year, gender){
     year:year,
     gender:gender}
 
-};
+}
