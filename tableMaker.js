@@ -23,9 +23,10 @@ var makeTable = function(){
 };
 
 var peopleMaker = function(name, major, year, gender){
+  return{
     name:name,
     major:major,
     year:year,
-    gender:gender
+    gender:gender}
 
 };
