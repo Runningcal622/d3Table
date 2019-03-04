@@ -11,23 +11,47 @@ var makeTable = function(){
                .enter()
                .append("tr");
 
+  //var headers = ["Name","Major","Grade","Gender"];
+  //headers.forEach(function(ele,i){
+    //rows[i].text(ele);
+  //});
+
   rows.append("td")
-      .text(function(d){return d.name});
+      .text(function(d){return d.name})
+      .style("color","black");
   rows.append("td")
-      .text(function(d){return d.major});
+      .text(function(d){return d.major})
+      .style("color","green");
   rows.append("td")
-      .text(function(d){return d.year});
+      .text(function(d){return d.year})
+      .style("color","blue");
   rows.append("td")
-      .text(function(d){return d.gender});
+      .text(function(d){return d.gender})
+      .style("color","red");
+
 
       /// styling
   rows.selectAll("td")
-      .style("border","1px solid black");
+     .style("border","1px solid black")
+     .style("width","70px");
+
   table.style("color","red")
-    .style("border","1px solid black");
+    .style("border","1px solid black")
+    .style("text-align","center")
+    .style("border-collapse","collapse")
+    .style("margin-left","auto")
+    .style("margin-right","auto")
+    .style("margin-top","10%");
 
 
 
+
+  var button = d3.select(".startButton");
+  //button.attr("visible", "hidden");
+  button.attr("disabled","disabled");
+  button.style("display","none");
+  d3.select("body")
+    .style("background-color","beige");
 }
 
 var peopleMaker = function(name, major, year, gender){
